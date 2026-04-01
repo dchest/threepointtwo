@@ -1,0 +1,929 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+    <title>ThreePointTwo - Modern Web Framework</title>
+</head>
+<body bgcolor="white" text="black" link="teal" vlink="gray" alink="red">
+
+    <!-- Navbar -->
+    <table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="black">
+        <tr>
+            <td align="left" valign="middle">
+                <font face="Arial, Helvetica" size="4" color="white"><b>ThreePointTwo</b></font>
+            </td>
+            <td align="right" valign="middle">
+                <font face="Arial, Helvetica" size="3">
+                    <a href="#theming"><font color="silver">Theming</font></a> &nbsp;&nbsp;
+                    <a href="#typography"><font color="silver">Typography</font></a> &nbsp;&nbsp;
+                    <a href="#dividers"><font color="silver">Dividers</font></a> &nbsp;&nbsp;
+                    <a href="#components"><font color="silver">Components</font></a> &nbsp;&nbsp;
+                    <a href="#grid"><font color="silver">Grid</font></a> &nbsp;&nbsp;
+                    <a href="#media"><font color="silver">Media</font></a> &nbsp;&nbsp;
+                    <a href="#animations"><font color="silver">Animations</font></a> &nbsp;&nbsp;
+                    <a href="#colors"><font color="silver">Colors</font></a>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Main Content Container -->
+    <table width="80%" border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+            <td>
+
+                <!-- Hero Section -->
+                <a name="hero"></a>
+                <center>
+                    <br>
+                    <h1 align="center"><font face="Arial, Helvetica" size="+4"  color="black">Rapidly build modern websites</font></h1>
+                    <font face="Arial" size="5" color="gray">Utility-first inline attributes for the World Wide Web.</font><br><br><br>
+
+                    <table border="0" cellpadding="10" cellspacing="0">
+                        <tr><td>
+                            <table border="0" cellpadding="12" cellspacing="0" bgcolor="teal">
+                                <tr><td><a href="#installation"><font color="white" face="Arial" size="4"><b>Get Started</b></font></a></td>
+                            </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table border="0" cellpadding="12" cellspacing="0">
+                                <tr><td>
+                                    <img src="https://github.com/favicon.ico" alt="GitHub" width="16" height="16" align="bottom">
+                                    <a href="https://github.com/dchest/threepointtwo"><font color="gray" face="Arial" size="4">GitHub</font></a></td>
+                            </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </table>
+                </center>
+                <br>
+
+                <br><br><hr size="1" width="100%" noshade color="silver"><br>
+                <!-- Installation -->
+                <a name="installation"></a>
+                <h2><font face="Arial, Helvetica" color="black">Installation</font></h2>
+
+                <p><font face="Arial" size="3" color="gray">No setup required: comes pre-installed in all modern browsers.
+                Compatible with all web frameworks.</font></p>
+                <br>
+
+                <!-- Body Attributes Section -->
+                <a name="theming"></a>
+                <h2><font face="Arial, Helvetica" color="black">Theming</font></h2>
+                <font face="Arial" size="3" color="gray">Configure global themes and link states on the <tt>&lt;body&gt;</tt> tag.</font>
+                <br><br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="white">
+                            <tr>
+                                <td bgcolor="silver" width="30%"><b><font face="Arial" color="black">Attribute</font></b></td>
+                                <td bgcolor="silver" width="70%"><b><font face="Arial" color="black">Description</font></b></td>
+                            </tr>
+                            <tr>
+                                <td><font face="monospace">bgcolor, text</font></td>
+                                <td><font face="Arial">Sets the global background and default text color.</font></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="white"><font face="monospace">link, vlink, alink</font></td>
+                                <td bgcolor="white">
+                                    <font face="Arial">Controls link states globally without CSS: <br><br>
+                                    <a href="#theming"><font color="teal">link (unvisited)</font></a> &nbsp;|&nbsp;
+                                    <a href="#theming"><font color="gray">vlink (visited)</font></a> &nbsp;|&nbsp;
+                                    <a href="#theming"><font color="red">alink (active)</font></a></font>
+                                </td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;body
+   bgcolor="white"
+   text="black"
+   link="teal"
+   vlink="gray"
+   alink="red"&gt;</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+                <br><br><hr size="1" noshade color="silver"><br>
+
+                <!-- Typography Section -->
+                <a name="typography"></a>
+                <h2><font face="Arial, Helvetica" color="black">Typography Utilities</font></h2>
+                <font face="Arial" size="3" color="gray">Structure your document with semantic headings and control text size, face, and color directly in your markup.</font>
+                <br><br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="white">
+                            <tr>
+                                <td bgcolor="silver" width="50%"><b><font face="Arial" color="black">Result</font></b></td>
+                                <td bgcolor="silver" width="50%"><b><font face="Arial" color="black">Code</font></b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h1><font face="Arial">Heading 1</font></h1>
+                                    <h3><font face="Arial">Heading 3</font></h3>
+                                    <h6><font face="Arial">Heading 6</font></h6>
+                                </td>
+                                <td valign="middle">
+                                    <font face="monospace">
+                                        &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                                        &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                                        &lt;h6&gt;Heading 6&lt;/h6&gt;
+                                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><font size="+2" face="Arial">Display Heading</font></td>
+                                <td><font face="monospace">&lt;font size="+2"&gt;Display Heading&lt;/font&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td><font color="red" face="Arial">Danger text</font></td>
+                                <td><font face="monospace">&lt;font color="red"&gt;Danger text&lt;/font&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td><font color="teal" face="Arial">Info text</font></td>
+                                <td><font face="monospace">&lt;font color="teal"&gt;Info text&lt;/font&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td><font face="monospace">Monospaced font</font></td>
+                                <td><font face="monospace">&lt;font face="monospace"&gt;Monospaced font&lt;/font&gt;<br>&lt;code&gt;Code&lt;/code&gt;<br>&lt;pre&gt;Preformatted text&lt;/pre&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td><font face="serif">Serif font</font></td>
+                                <td><font face="monospace">&lt;font face="serif"&gt;Serif font&lt;/font&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td><font face="sans-serif">Sans-serif font</font></td>
+                                <td><font face="monospace">&lt;font face="sans-serif"&gt;Sans-serif font&lt;/font&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td><font face="Avenir, Arial, sans-serif">Fonts with fallback</font></td>
+                                <td><font face="monospace">&lt;font face="Avenir, Arial, sans-serif"&gt;Fonts with fallback&lt;/font&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td><font face="Arial"><b>Bold</b>, <i>Italic</i>, <u>Underline</u></font></td>
+                                <td><font face="monospace">&lt;b&gt;Bold&lt;/b&gt;, &lt;i&gt;Italic&lt;/i&gt;, &lt;u&gt;Underline&lt;/u&gt;</font></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p align="left"><font face="Arial">Left-aligned text</font></p>
+                                    <p align="center"><font face="Arial">Center-aligned text</font></p>
+                                    <p align="right"><font face="Arial">Right-aligned text</font></p>
+                                </td>
+                                <td valign="middle">
+                                    <font face="monospace">
+                                        &lt;p align="left"&gt;Left-aligned text&lt;/p&gt;<br>
+                                        &lt;p align="center"&gt;Center-aligned text&lt;/p&gt;<br>
+                                        &lt;p align="right"&gt;Right-aligned text&lt;/p&gt;
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+                <br><br><hr size="1" noshade color="silver"><br>
+
+                <!-- Dividers Section -->
+                <a name="dividers"></a>
+                <h2><font face="Arial, Helvetica" color="black">Dividers</font></h2>
+                <font face="Arial" size="3" color="gray">Style horizontal rules using <tt>size</tt>, <tt>width</tt>, <tt>align</tt>, and <tt>noshade</tt>.</font>
+                <br><br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="white">
+                            <tr>
+                                <td>
+                                    <font face="Arial" size="2" color="gray">Default 3D Groove:</font>
+                                    <hr>
+                                    <font face="Arial" size="2" color="gray">Solid, 5px thick, 50% width, centered:</font>
+                                    <hr size="5" width="50%" noshade color="teal">
+                                    <font face="Arial" size="2" color="gray">Solid, 1px thick, 25% width, right-aligned:</font>
+                                    <hr size="1" width="25%" align="right" noshade color="black">
+                                </td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;hr&gt;
+&lt;hr
+   size="5"
+   width="50%"
+   noshade
+   color="teal"&gt;
+&lt;hr
+   size="1"
+   width="25%"
+   align="right"
+   noshade
+   color="black"&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+                <br><br><hr size="1" noshade color="silver"><br>
+
+                <!-- Components Section -->
+                <a name="components"></a>
+                <h2><font face="Arial, Helvetica" color="black">Components</font></h2>
+                <font face="Arial" size="3" color="gray">Pre-built flat UI elements using nested tables.</font>
+                <br><br>
+
+                <!-- Buttons -->
+                <font face="Arial" size="4"><b>Buttons</b></font><br><br>
+                <table border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="1" cellspacing="0" bgcolor="teal">
+                                <tr><td>
+                                    <table border="0" cellpadding="8" cellspacing="0" bgcolor="teal">
+                                        <tr><td><a href="#"><font color="white" face="Arial"><b>Primary</b></font></a></td></tr>
+                                    </table>
+                                </td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                                <tr><td>
+                                    <table border="0" cellpadding="8" cellspacing="0" bgcolor="white">
+                                        <tr><td><a href="#"><font color="black" face="Arial"><b>Secondary</b></font></a></td></tr>
+                                    </table>
+                                </td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table border="0" cellpadding="1" cellspacing="0" bgcolor="red">
+                                <tr><td>
+                                    <table border="0" cellpadding="8" cellspacing="0" bgcolor="red">
+                                        <tr><td><a href="#"><font color="white" face="Arial"><b>Danger</b></font></a></td></tr>
+                                    </table>
+                                </td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;table
+   border="0"
+   cellpadding="1"
+   cellspacing="0"
+   bgcolor="teal"&gt;
+  &lt;tr&gt;&lt;td&gt;
+    &lt;table
+       border="0"
+       cellpadding="8"
+       cellspacing="0"
+       bgcolor="teal"&gt;
+      &lt;tr&gt;&lt;td&gt;
+        &lt;a href="#"&gt;
+        &lt;font
+           color="white"
+           face="Arial"&gt;
+          &lt;b&gt;Primary&lt;/b&gt;
+        &lt;/font&gt;&lt;/a&gt;
+      &lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br><br>
+
+                <!-- Badges -->
+                <font face="Arial" size="4"><b>Badges</b></font><br><br>
+                <table border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td><font face="Arial" size="3">Messages</font></td>
+                        <td>
+                            <table border="0" cellpadding="3" cellspacing="0" bgcolor="teal">
+                                <tr><td><font color="white" size="2" face="Arial"><b>42</b></font></td></tr>
+                            </table>
+                        </td>
+                        <td><font face="Arial" size="3">Status</font></td>
+                        <td>
+                            <table border="0" cellpadding="3" cellspacing="0" bgcolor="gray">
+                                <tr><td><font color="white" size="2" face="Arial"><b>OFFLINE</b></font></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;table
+   border="0"
+   cellpadding="3"
+   cellspacing="0"
+   bgcolor="teal"&gt;
+  &lt;tr&gt;&lt;td&gt;
+    &lt;font
+       color="white"
+       size="2"
+       face="Arial"&gt;
+      &lt;b&gt;42&lt;/b&gt;
+    &lt;/font&gt;
+  &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br><br>
+
+                <!-- Progress Bars -->
+                <font face="Arial" size="4"><b>Progress Bars</b></font><br><br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+                            <tr>
+                                <td width="75%" bgcolor="teal" height="10"></td>
+                                <td width="25%"></td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;table
+   width="100%"
+   border="0"
+   cellpadding="1"
+   cellspacing="0"
+   bgcolor="silver"&gt;
+  &lt;tr&gt;&lt;td&gt;
+    &lt;table
+       width="100%"
+       border="0"
+       cellpadding="0"
+       cellspacing="0"
+       bgcolor="white"&gt;
+      &lt;tr&gt;
+        &lt;td
+           width="75%"
+           bgcolor="teal"
+           height="10"&gt;
+        &lt;/td&gt;
+        &lt;td width="25%"&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br><br>
+
+                <!-- Tabs -->
+                <font face="Arial" size="4"><b>Tabs</b></font><br><br>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td width="15%">
+                            <table border="0" cellpadding="1" cellspacing="0" bgcolor="silver" width="100%">
+                                <tr><td>
+                                    <table border="0" cellpadding="8" cellspacing="0" bgcolor="white" width="100%">
+                                        <tr><td align="center"><font color="black" face="Arial"><b>Active</b></font></td></tr>
+                                    </table>
+                                </td></tr>
+                            </table>
+                        </td>
+                        <td width="15%">
+                            <table border="0" cellpadding="1" cellspacing="0" bgcolor="silver" width="100%">
+                                <tr><td>
+                                    <table border="0" cellpadding="8" cellspacing="0" bgcolor="silver" width="100%">
+                                        <tr><td align="center"><a href="#"><font color="teal" face="Arial">Link</font></a></td></tr>
+                                    </table>
+                                </td></tr>
+                            </table>
+                        </td>
+                        <td width="70%" border="0">
+
+                        </td>
+                    </tr>
+                    <tr><td colspan="2">
+                        <table border="0" cellpadding="15" cellspacing="0" bgcolor="white" width="100%">
+                            <tr><td><font face="Arial">Tab content goes here.</font></td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;table
+     border="0"
+     cellpadding="0"
+     cellspacing="0"
+     width="100%"&gt;
+    &lt;tr&gt;
+        &lt;td width="15%"&gt;
+            &lt;table
+                 border="0"
+                 cellpadding="1"
+                 cellspacing="0"
+                 bgcolor="silver"
+                 width="100%"&gt;
+                &lt;tr&gt;&lt;td&gt;
+                    &lt;table
+                         border="0"
+                         cellpadding="8"
+                         cellspacing="0"
+                         bgcolor="white"
+                         width="100%"&gt;
+                        &lt;tr&gt;&lt;td align="center"&gt;
+                            &lt;font color="black" face="Arial"&gt;
+                                &lt;b&gt;Active&lt;/b&gt;
+                            &lt;/font&gt;
+                        &lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td width="15%"&gt;
+            &lt;table
+                 border="0"
+                 cellpadding="1"
+                 cellspacing="0"
+                 bgcolor="silver"
+                 width="100%"&gt;
+                &lt;tr&gt;&lt;td&gt;
+                    &lt;table
+                         border="0"
+                         cellpadding="8"
+                         cellspacing="0"
+                         bgcolor="silver"
+                         width="100%"&gt;
+                        &lt;tr&gt;&lt;td align="center"&gt;
+                            &lt;a href="#"&gt;
+                                &lt;font color="teal" face="Arial"&gt;Link&lt;/font&gt;
+                            &lt;/a&gt;
+                        &lt;/td&gt;&lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;td width="70%" border="0"&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;
+            &lt;table
+                 border="0"
+                 cellpadding="15"
+                 cellspacing="0"
+                 bgcolor="white"
+                 width="100%"&gt;
+                &lt;tr&gt;&lt;td&gt;
+                    &lt;font face="Arial"&gt;Tab content goes here.&lt;/font&gt;
+                &lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br><br>
+
+                <!-- Alerts -->
+                <font face="Arial" size="4"><b>Alerts</b></font><br><br>
+
+                <!-- Info Alert -->
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="navy">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="aqua">
+                            <tr><td><font face="Arial" color="black"><b>Info:</b> New updates are available for your system.</font></td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+
+                <!-- Success Alert -->
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="green">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="lime">
+                            <tr><td><font face="Arial" color="black"><b>Success:</b> Your settings have been saved.</font></td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+
+                <!-- Warning Alert -->
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="olive">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="yellow">
+                            <tr><td><font face="Arial" color="black"><b>Warning:</b> Your session is about to expire.</font></td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+
+                <!-- Danger Alert -->
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="maroon">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="red">
+                            <tr><td><font face="Arial" color="white"><b>Danger:</b> A critical error has occurred.</font></td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;!-- Success Alert --&gt;
+&lt;table
+   width="100%"
+   border="0"
+   cellpadding="1"
+   cellspacing="0"
+   bgcolor="green"&gt;
+  &lt;tr&gt;&lt;td&gt;
+    &lt;table
+       width="100%"
+       border="0"
+       cellpadding="10"
+       cellspacing="0"
+       bgcolor="lime"&gt;
+      &lt;tr&gt;&lt;td&gt;
+        &lt;font color="black"&gt;
+          &lt;b&gt;Success:&lt;/b&gt; Saved.
+        &lt;/font&gt;
+      &lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;!-- Danger Alert --&gt;
+&lt;table
+   width="100%"
+   border="0"
+   cellpadding="1"
+   cellspacing="0"
+   bgcolor="maroon"&gt;
+  &lt;tr&gt;&lt;td&gt;
+    &lt;table
+       width="100%"
+       border="0"
+       cellpadding="10"
+       cellspacing="0"
+       bgcolor="red"&gt;
+      &lt;tr&gt;&lt;td&gt;
+        &lt;font color="white"&gt;
+          &lt;b&gt;Danger:&lt;/b&gt; Error.
+        &lt;/font&gt;
+      &lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br><br>
+
+                <!-- Cards -->
+                <font face="Arial" size="4"><b>Cards</b></font><br><br>
+                <table width="50%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+                            <tr>
+                                <td bgcolor="silver" cellpadding="10">
+                                    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                        <tr><td><font face="Arial" color="black"><b>Card Header</b></font></td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="15" cellspacing="0" width="100%">
+                                        <tr><td><font face="Arial" size="3" color="gray">Card body content sits here, cleanly separated by flat borders.</font></td></tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;table
+   width="50%"
+   border="0"
+   cellpadding="1"
+   cellspacing="0"
+   bgcolor="silver"&gt;
+  &lt;tr&gt;&lt;td&gt;
+    &lt;table
+       width="100%"
+       border="0"
+       cellpadding="0"
+       cellspacing="0"
+       bgcolor="white"&gt;
+      &lt;tr&gt;
+        &lt;td bgcolor="silver"&gt;
+          &lt;font face="Arial"&gt;
+            &lt;b&gt;Header&lt;/b&gt;
+          &lt;/font&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;font face="Arial"&gt;
+            Body content
+          &lt;/font&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+                <br><br><hr size="1" noshade color="silver"><br>
+
+                <!-- Grid Section -->
+                <a name="grid"></a>
+                <h2><font face="Arial, Helvetica" color="black">Grid System</font></h2>
+                <font face="Arial" size="3" color="gray">Use <tt>width</tt> percentages and <tt>colspan</tt> to create layouts.</font>
+                <br><br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="1" bgcolor="silver">
+                            <tr>
+                                <td width="33%" bgcolor="white" align="center"><font color="gray" face="Arial"><b>col-4</b></font></td>
+                                <td width="33%" bgcolor="white" align="center"><font color="gray" face="Arial"><b>col-4</b></font></td>
+                                <td width="34%" bgcolor="white" align="center"><font color="gray" face="Arial"><b>col-4</b></font></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" width="66%" bgcolor="white" align="center"><font color="gray" face="Arial"><b>col-8</b></font></td>
+                                <td width="34%" bgcolor="white" align="center"><font color="gray" face="Arial"><b>col-4</b></font></td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;table
+   width="100%"
+   border="0"
+   cellpadding="10"
+   cellspacing="1"
+   bgcolor="silver"&gt;
+  &lt;tr&gt;
+    &lt;td
+       width="33%"
+       bgcolor="white"&gt;
+      ...
+    &lt;/td&gt;
+    &lt;td
+       width="33%"
+       bgcolor="white"&gt;
+      ...
+    &lt;/td&gt;
+    &lt;td
+       width="34%"
+       bgcolor="white"&gt;
+      ...
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td
+       colspan="2"
+       width="66%"
+       bgcolor="white"&gt;
+      ...
+    &lt;/td&gt;
+    &lt;td
+       width="34%"
+       bgcolor="white"&gt;
+      ...
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+                <br><br><hr size="1" noshade color="silver"><br>
+
+                <!-- Media Section -->
+                <a name="media"></a>
+                <h2><font face="Arial, Helvetica" color="black">Media & Alignment</font></h2>
+                <font face="Arial" size="3" color="gray">Float images using <tt>align="left"</tt> and control spacing with <tt>hspace</tt> and <tt>vspace</tt> directly on the image tag.</font>
+                <br><br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="white">
+                            <tr>
+                                <td>
+                                    <img src="https://placecats.com/100/100" width="100" height="100" border="0" align="left" hspace="15" vspace="5" alt="Cat Placeholder">
+                                    <p align="justify">
+                                        <font face="Arial" size="3">
+                                            This text wraps around the image perfectly. By utilizing the <b>align="left"</b> attribute directly on the image tag, alongside <b>hspace="15"</b> and <b>vspace="5"</b>, we achieve a clean, float-like layout without needing complex CSS or wrapping tables. The text flows naturally around the placeholder cat.
+                                        </font>
+                                    </p>
+                                    <br clear="all">
+                                </td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;img
+   src="https://placecats.com/100/100"
+   width="100"
+   height="100"
+   border="0"
+   align="left"
+   hspace="15"
+   vspace="5"&gt;
+&lt;p align="justify"&gt;
+  This text wraps around
+  the image perfectly...
+&lt;/p&gt;
+&lt;br clear="all"&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+                <br><br><hr size="1" noshade color="silver"><br>
+
+                <!-- Animations Section -->
+                <a name="animations"></a>
+                <h2><font face="Arial, Helvetica" color="black">Animations</font></h2>
+                <font face="Arial" size="3" color="gray">Bring your UI to life with hardware-accelerated text movement. (Note: this is not part of the HTML 3.2 standard, but supported by browsers anyway.)</font>
+                <br><br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="15" cellspacing="0" bgcolor="white">
+                            <tr>
+                                <td>
+                                    <font face="Arial" size="2" color="gray">Standard Scroll:</font><br>
+                                    <marquee bgcolor="black"><font color="teal" face="monospace" size="4"><b>Processing request... Please wait...</b></font></marquee>
+                                    <br><br>
+                                    <font face="Arial" size="2" color="gray">Bouncing Alert:</font><br>
+                                    <marquee behavior="alternate" scrollamount="15" bgcolor="red"><font color="white" face="Arial" size="4"><b>CRITICAL SYSTEM ERROR</b></font></marquee>
+                                </td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;!-- Standard Scroll --&gt;
+&lt;marquee bgcolor="black"&gt;
+  &lt;font color="teal"&gt;
+    Processing request...
+  &lt;/font&gt;
+&lt;/marquee&gt;
+
+&lt;!-- Bouncing Alert --&gt;
+&lt;marquee
+   behavior="alternate"
+   scrollamount="15"
+   bgcolor="red"&gt;
+  &lt;font color="white"&gt;
+    CRITICAL SYSTEM ERROR
+  &lt;/font&gt;
+&lt;/marquee&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+                <br><br><hr size="1" noshade color="silver"><br>
+
+                <!-- Colors Section -->
+                <a name="colors"></a>
+                <h2><font face="Arial, Helvetica" color="black">Color Palette</font></h2>
+                <font face="Arial" size="3" color="gray">Nicely named accessible colors that work on every display and don't require remembering cryptic numbers.</font>
+                <br><br>
+
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="15" cellspacing="1" bgcolor="silver">
+                            <tr>
+                                <td bgcolor="black" width="25%" align="center"><font color="white" face="monospace">black</font></td>
+                                <td bgcolor="gray" width="25%" align="center"><font color="white" face="monospace">gray</font></td>
+                                <td bgcolor="silver" width="25%" align="center"><font color="black" face="monospace">silver</font></td>
+                                <td bgcolor="white" width="25%" align="center"><font color="black" face="monospace">white</font></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="maroon" align="center"><font color="white" face="monospace">maroon</font></td>
+                                <td bgcolor="red" align="center"><font color="white" face="monospace">red</font></td>
+                                <td bgcolor="purple" align="center"><font color="white" face="monospace">purple</font></td>
+                                <td bgcolor="fuchsia" align="center"><font color="white" face="monospace">fuchsia</font></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="green" align="center"><font color="white" face="monospace">green</font></td>
+                                <td bgcolor="lime" align="center"><font color="black" face="monospace">lime</font></td>
+                                <td bgcolor="olive" align="center"><font color="white" face="monospace">olive</font></td>
+                                <td bgcolor="yellow" align="center"><font color="black" face="monospace">yellow</font></td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="navy" align="center"><font color="white" face="monospace">navy</font></td>
+                                <td bgcolor="blue" align="center"><font color="white" face="monospace">blue</font></td>
+                                <td bgcolor="teal" align="center"><font color="white" face="monospace">teal</font></td>
+                                <td bgcolor="aqua" align="center"><font color="black" face="monospace">aqua</font></td>
+                            </tr>
+                        </table>
+                    </td></tr>
+                </table>
+                <br>
+                <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="silver">
+                    <tr><td>
+                        <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="black">
+                            <tr><td>
+<pre><font color="silver">&lt;!-- Background color --&gt;
+&lt;td bgcolor="teal"&gt;...&lt;/td&gt;
+
+&lt;!-- Text color --&gt;
+&lt;font color="fuchsia"&gt;...&lt;/font&gt;
+</font></pre>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <!-- Footer -->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="silver">
+        <tr>
+            <td align="center">
+                <font color="gray" size="2" face="Arial">
+                    &copy; 14 Jan 1997-1 Apr 2026 Modern Web Consortium. Best viewed in Netscape Navigator 3.0 at 800x600.
+                </font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
